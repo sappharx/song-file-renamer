@@ -1,11 +1,26 @@
 {
-  "name": "fix-song-file-names",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "song-file-renamer",
+  "version": "0.0.1",
+  "description": "a little to remove the artist name from song file names",
+  "bin": {
+    "renamer": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sappharx/song-file-renamer.git"
+  },
+  "author": "Vincent Sisk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sappharx/song-file-renamer/issues"
+  },
+  "homepage": "https://github.com/sappharx/song-file-renamer#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "commander": "^2.9.0",
+    "shelljs": "^0.7.0"
+  }
 }
