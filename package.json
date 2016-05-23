@@ -1,7 +1,7 @@
 {
   "name": "song-file-renamer",
   "version": "0.0.1",
-  "description": "a little to remove the artist name from song file names",
+  "description": "a little app to remove the artist name from song file names",
   "bin": {
     "renamer": "index.js"
   },
