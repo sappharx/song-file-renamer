@@ -10,8 +10,6 @@ function transformer (filename) {
   const title = getSongTitle(result[2]);
   const type = result[3];
 
-  // console.log(`${track}, ${artist}, ${title}, ${type}`);
-
   return `${track} - ${title}.${type}`;
 }
 

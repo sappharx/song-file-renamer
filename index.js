@@ -1,11 +1,9 @@
 #!/usr/bin/env node
 
 const fs = require('fs');
-const options = require('./options');
 const transformer = require('./transformer');
 
-const files = fs.readdirSync(options.directory);
-// console.log(files);
+const files = fs.readdirSync('.');
 
 files
   .filter(value => {
@@ -14,7 +12,10 @@ files
       value.endsWith('.ogg') ||
       value.endsWith('.wav'))
   })
-  .forEach(value => {
-    console.log(value);
-    console.log(transformer(value));
+  .forEach(old => {
+    const newName = transformer(old);
+    
+    console.log(`renaming "${old}" to "${newName}"`);
+    
+    fs.renameSync(old, newName);
   });
